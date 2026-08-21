@@ -3,12 +3,12 @@ import { ThemeProvider } from './context/ThemeContext';
 import KineticTicker from './components/KineticTicker';
 import CyberQuantumCanvas from './components/CyberQuantumCanvas';
 import CommandHeader from './components/CommandHeader';
-import KineticHeroStage from './components/KineticHeroStage';
+import SharplinkHeroStage from './components/SharplinkHeroStage';
 import InteractiveWebSocketEngine from './components/InteractiveWebSocketEngine';
 import InteractiveTerminalHUD from './components/InteractiveTerminalHUD';
 import AnimatedKycPipeline from './components/AnimatedKycPipeline';
 import CodeArchitectureVault from './components/CodeArchitectureVault';
-import ScrollPinnedExperienceDeck from './components/ScrollPinnedExperienceDeck';
+import MosbyCaseFolderDeck from './components/MosbyCaseFolderDeck';
 import AnimatedSkillsMatrix from './components/AnimatedSkillsMatrix';
 import KineticHUDDock from './components/KineticHUDDock';
 import CommandPaletteModal from './components/CommandPaletteModal';
@@ -35,30 +35,30 @@ export default function App() {
           onOpenCommandPalette={() => setIsCommandPaletteOpen(true)}
         />
 
-        {/* Main Kinetic Content Stage */}
+        {/* Main Content Stage */}
         <main className="relative z-10 space-y-16">
-          {/* Kinetic Hero Stage with Live Audio Equalizer & Interactive 3D Spinning Quantum Core */}
-          <KineticHeroStage
+          {/* Sharplink-Inspired Architectural Hero Stage */}
+          <SharplinkHeroStage
             onExploreClick={() => {
-              document.getElementById('lab')?.scrollIntoView({ behavior: 'smooth' });
+              document.getElementById('cases')?.scrollIntoView({ behavior: 'smooth' });
             }}
             onOpenResume={() => setIsResumeOpen(true)}
           />
 
-          {/* Real-Time WebSocket Engine with Live Animated Canvas Price Line Chart */}
+          {/* Mosby Files Inspired 3D Manila Case Folders */}
+          <MosbyCaseFolderDeck />
+
+          {/* Real-Time WebSocket Engine */}
           <InteractiveWebSocketEngine />
 
           {/* Interactive Shell Terminal */}
           <InteractiveTerminalHUD />
 
-          {/* Animated Biometric Shufti KYC Scan Beam Laser Pipeline */}
+          {/* Animated Biometric Shufti KYC Pipeline */}
           <AnimatedKycPipeline />
 
           {/* Production Code Architecture Vault */}
           <CodeArchitectureVault />
-
-          {/* 3D Tilt Experience Deck */}
-          <ScrollPinnedExperienceDeck />
 
           {/* Orbital Skill Matrix */}
           <AnimatedSkillsMatrix />

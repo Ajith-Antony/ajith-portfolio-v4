@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300..800;1,300..800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Archivo:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:ital,wght@0,300..800;1,300..800&display=swap');
 @import "./tokens/index.css";
 @import "tailwindcss";
 
@@ -6,67 +6,119 @@
   body {
     background-color: var(--semantic-bg);
     color: var(--semantic-fg);
-    font-family: var(--font-sans-family);
+    font-family: 'Archivo', -apple-system, sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
     overflow-x: hidden;
   }
 }
 
 .font-sans {
-  font-family: var(--font-sans-family);
+  font-family: 'Archivo', -apple-system, sans-serif;
 }
 
 .font-display {
-  font-family: var(--font-display-family);
+  font-family: 'Archivo', -apple-system, sans-serif;
+  letter-spacing: -0.03em;
 }
 
 .font-mono {
-  font-family: var(--font-mono-family);
+  font-family: 'Archivo Narrow', 'JetBrains Mono', monospace;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
-/* High-Contrast Card Panel */
-.ds-card {
-  background: var(--semantic-surface-card);
-  color: var(--semantic-fg);
+/* Sharplink Pinned Corner Indicator */
+.has-pin {
+  position: relative;
+}
+
+.has-pin::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background-color: var(--semantic-primary);
+  z-index: 10;
+}
+
+.has-pin-tr::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 7px;
+  height: 7px;
+  background-color: var(--semantic-secondary);
+  z-index: 10;
+}
+
+/* Mosby Manila Case Folder Styling */
+.case-folder {
+  background-color: var(--semantic-folder-bg);
   border: 2px solid var(--semantic-border-bold);
-  border-radius: var(--radius-lg);
-  box-shadow: 5px 5px 0px var(--semantic-primary);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 6px;
+  box-shadow: 6px 6px 0px var(--semantic-border-bold);
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
-.ds-card:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 7px 7px 0px var(--semantic-primary);
+.case-folder:hover {
+  transform: translateY(-3px);
+  box-shadow: 9px 9px 0px var(--semantic-border-bold);
+}
+
+/* Folder Paper Sheet */
+.case-sheet {
+  background-color: var(--semantic-folder-sheet);
+  border: 1px solid var(--semantic-border);
+  border-radius: 4px;
+  padding: 2rem;
+  position: relative;
+}
+
+/* Tab Header */
+.case-tag-tab {
+  background-color: var(--semantic-primary);
+  color: #ffffff !important;
+  font-family: 'Archivo Narrow', monospace;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 6px 6px 0 0;
+  display: inline-block;
+  text-transform: uppercase;
 }
 
 /* Standalone Dark Workbench Box (Always Dark BG + Always White Text) */
 .ds-dark-workbench {
-  background-color: #090a0f !important;
+  background-color: #111217 !important;
   color: #ffffff !important;
-  border: 2px solid #2d3748;
+  border: 2px solid #33343d;
 }
 
 .ds-dark-workbench * {
   color: inherit;
 }
 
-/* Tactile Primary Button */
+/* Buttons */
 .ds-btn-primary {
   background-color: var(--semantic-primary);
   color: #ffffff !important;
-  font-family: var(--font-mono-family);
+  font-family: 'Archivo Narrow', monospace;
   font-weight: 700;
-  padding: 10px 20px;
-  border-radius: var(--radius-md);
+  padding: 12px 24px;
+  border-radius: 4px;
   border: 2px solid #000000;
-  box-shadow: 3px 3px 0px #000000;
+  box-shadow: 4px 4px 0px #000000;
   transition: all 0.18s ease-out;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .ds-btn-primary:hover {
-  transform: translateY(-1px);
-  box-shadow: 4px 4px 0px #000000;
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px #000000;
 }
 
 .ds-btn-primary:active {
@@ -74,17 +126,17 @@
   box-shadow: 1px 1px 0px #000000;
 }
 
-/* Secondary Button */
 .ds-btn-secondary {
   background-color: var(--semantic-surface);
   color: var(--semantic-fg);
   border: 2px solid var(--semantic-border-bold);
-  font-family: var(--font-mono-family);
+  font-family: 'Archivo Narrow', monospace;
   font-weight: 700;
-  padding: 10px 20px;
-  border-radius: var(--radius-md);
+  padding: 12px 24px;
+  border-radius: 4px;
   transition: all 0.18s ease-out;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .ds-btn-secondary:hover {
@@ -92,12 +144,11 @@
   border-color: var(--semantic-primary);
 }
 
-/* Tech Tag Pill */
 .ds-tag {
   background-color: var(--semantic-surface-tag);
   color: var(--semantic-fg-tag);
   border: 1px solid var(--semantic-border-bold);
-  font-family: var(--font-mono-family);
+  font-family: 'Archivo Narrow', monospace;
   font-weight: 700;
 }
 
@@ -117,8 +168,4 @@
   display: flex;
   width: 200%;
   animation: marquee 25s linear infinite;
-}
-
-.animate-marquee:hover {
-  animation-play-state: paused;
 }

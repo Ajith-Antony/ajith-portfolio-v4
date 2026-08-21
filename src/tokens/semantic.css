@@ -1,61 +1,68 @@
 /* ==========================================
-   LAYER 2: SEMANTIC DESIGN TOKENS
+   SEMANTIC TOKENS: ARCHITECTURAL DOSSIER & MANILA FOLDER SCHEME
+   (Inspired by Mosby Files & Sharplink)
    ========================================== */
 
-/* DARK THEME (OBSIDIAN INK & SOLAR VERMILION) */
 :root, .dark {
-  --semantic-bg: #090a0f;
-  --semantic-bg-alt: #12141d;
-  --semantic-surface: #12141d;
-  --semantic-surface-card: #181b28;
+  --semantic-bg: #121214;                 /* Dark Architectural Velvet */
+  --semantic-bg-alt: #18181c;
+  --semantic-surface: #191919;
+  --semantic-surface-card: #1f1f24;
+
+  --semantic-folder-bg: #262522;         /* Dark Case Folder */
+  --semantic-folder-sheet: #191919;
+  --semantic-folder-tag: #ff4500;
   
-  --semantic-surface-terminal: #050609;
+  --semantic-surface-terminal: #090a0d;
   --semantic-fg-terminal: #ffffff;
-  --semantic-surface-tag: #1e2335;
+  --semantic-surface-tag: #2a2a32;
   --semantic-fg-tag: #f8fafc;
 
-  --semantic-fg: #f8fafc;
-  --semantic-fg-muted: #94a3b8;
-  --semantic-fg-subtle: #64748b;
+  --semantic-fg: #f5efe6;
+  --semantic-fg-muted: #a3a099;
+  --semantic-fg-subtle: #737069;
 
   --semantic-primary: #ff4500;       /* Solar Vermilion */
   --semantic-primary-bg: rgba(255, 69, 0, 0.15);
   --semantic-secondary: #38bdf8;     /* Cyan */
   --semantic-secondary-bg: rgba(56, 189, 248, 0.15);
-  --semantic-accent: #6366f1;        /* Indigo */
-  --semantic-accent-bg: rgba(99, 102, 241, 0.15);
+  --semantic-accent: #d97706;        /* Amber Stamp */
+  --semantic-accent-bg: rgba(217, 119, 6, 0.15);
 
-  --semantic-border: rgba(255, 255, 255, 0.12);
-  --semantic-border-bold: rgba(255, 255, 255, 0.28);
+  --semantic-border: rgba(245, 239, 230, 0.12);
+  --semantic-border-bold: rgba(245, 239, 230, 0.28);
   --semantic-border-active: #ff4500;
   --semantic-ring: #ff4500;
 }
 
-/* LIGHT THEME (PARCHMENT IVORY & OBSIDIAN INK) */
 .light {
-  --semantic-bg: #fcfbfa;                 /* Warm Parchment Light Paper */
-  --semantic-bg-alt: #f3f0e8;
-  --semantic-surface: #ffffff;
-  --semantic-surface-card: #ffffff;
-  
-  --semantic-surface-terminal: #090a0f;   /* Pitch Dark Terminal */
-  --semantic-fg-terminal: #ffffff;        /* Always White Text in Terminal */
-  --semantic-surface-tag: #e9e5d9;        /* Soft Tag Surface */
-  --semantic-fg-tag: #090a0f;             /* High Contrast Text */
+  --semantic-bg: #f5efe6;                 /* Mosby Manila Folder Canvas */
+  --semantic-bg-alt: #ece5d8;
+  --semantic-surface: #fffcf9;           /* Case Sheet Ivory */
+  --semantic-surface-card: #fffcf9;
 
-  --semantic-fg: #090a0f;
-  --semantic-fg-muted: #2d3748;           /* High readability slate */
-  --semantic-fg-subtle: #4a5568;
+  --semantic-folder-bg: #e6decb;         /* Manila Jacket Paper */
+  --semantic-folder-sheet: #fffcf9;
+  --semantic-folder-tag: #e03d00;
+
+  --semantic-surface-terminal: #111217;   /* Live Dark Code Box */
+  --semantic-fg-terminal: #ffffff;        /* Always White Text in Code Box */
+  --semantic-surface-tag: #e3dccf;
+  --semantic-fg-tag: #111217;
+
+  --semantic-fg: #111217;
+  --semantic-fg-muted: #33343d;
+  --semantic-fg-subtle: #555763;
 
   --semantic-primary: #e03d00;       /* Solar Vermilion */
   --semantic-primary-bg: rgba(224, 61, 0, 0.08);
-  --semantic-secondary: #0284c7;     /* Deep Cobalt */
+  --semantic-secondary: #0284c7;     /* Deep Blue */
   --semantic-secondary-bg: rgba(2, 132, 199, 0.08);
-  --semantic-accent: #4f46e5;        /* Deep Indigo */
-  --semantic-accent-bg: rgba(79, 70, 229, 0.08);
+  --semantic-accent: #b45309;        /* Deep Amber Stamp */
+  --semantic-accent-bg: rgba(180, 83, 9, 0.08);
 
-  --semantic-border: rgba(9, 10, 15, 0.15);
-  --semantic-border-bold: #090a0f;
+  --semantic-border: rgba(17, 18, 23, 0.16);
+  --semantic-border-bold: #111217;
   --semantic-border-active: #e03d00;
   --semantic-ring: #e03d00;
 }
