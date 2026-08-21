@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import KineticTicker from './components/KineticTicker';
-import KineticCanvasBackground from './components/KineticCanvasBackground';
+import CyberQuantumCanvas from './components/CyberQuantumCanvas';
 import CommandHeader from './components/CommandHeader';
-import HeadTurningHero from './components/HeadTurningHero';
-import InteractiveWebSocketLab from './components/InteractiveWebSocketLab';
+import KineticHeroStage from './components/KineticHeroStage';
+import InteractiveWebSocketEngine from './components/InteractiveWebSocketEngine';
 import InteractiveTerminalHUD from './components/InteractiveTerminalHUD';
-import PropTechIdentityPipeline from './components/PropTechIdentityPipeline';
+import AnimatedKycPipeline from './components/AnimatedKycPipeline';
 import CodeArchitectureVault from './components/CodeArchitectureVault';
-import StackedExperienceDeck from './components/StackedExperienceDeck';
-import TechRadarConstellation from './components/TechRadarConstellation';
-import FloatingGlassHUD from './components/FloatingGlassHUD';
+import ScrollPinnedExperienceDeck from './components/ScrollPinnedExperienceDeck';
+import AnimatedSkillsMatrix from './components/AnimatedSkillsMatrix';
+import KineticHUDDock from './components/KineticHUDDock';
 import CommandPaletteModal from './components/CommandPaletteModal';
 import InteractiveResumeModal from './components/InteractiveResumeModal';
 import StudioFooter from './components/StudioFooter';
@@ -21,54 +21,54 @@ export default function App() {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-[var(--semantic-bg)] text-[var(--semantic-fg)] font-sans selection:bg-[var(--semantic-primary)] selection:text-white relative overflow-x-hidden transition-colors duration-300 pb-20">
+      <div className="min-h-screen bg-[var(--semantic-bg)] text-[var(--semantic-fg)] font-sans selection:bg-[var(--semantic-primary)] selection:text-white relative overflow-x-hidden transition-colors duration-300 pb-24">
         
-        {/* Kinetic Interactive Mouse Particle Canvas */}
-        <KineticCanvasBackground />
+        {/* Continuous 60FPS WebGL / 3D Canvas Background */}
+        <CyberQuantumCanvas />
 
-        {/* Top Ticker */}
+        {/* Top Ticker Marquee */}
         <KineticTicker />
 
-        {/* Navigation Header */}
+        {/* Top Header */}
         <CommandHeader
           onOpenResume={() => setIsResumeOpen(true)}
           onOpenCommandPalette={() => setIsCommandPaletteOpen(true)}
         />
 
-        {/* Main Content Stage */}
+        {/* Main Kinetic Content Stage */}
         <main className="relative z-10 space-y-16">
-          {/* Head-Turning Hero */}
-          <HeadTurningHero
+          {/* Kinetic Hero Stage with Live Audio Equalizer & Interactive 3D Spinning Quantum Core */}
+          <KineticHeroStage
             onExploreClick={() => {
               document.getElementById('lab')?.scrollIntoView({ behavior: 'smooth' });
             }}
             onOpenResume={() => setIsResumeOpen(true)}
           />
 
-          {/* Low-Latency Real-Time Stream Lab */}
-          <InteractiveWebSocketLab />
+          {/* Real-Time WebSocket Engine with Live Animated Canvas Price Line Chart */}
+          <InteractiveWebSocketEngine />
 
           {/* Interactive Shell Terminal */}
           <InteractiveTerminalHUD />
 
-          {/* PropTech Identity & Valuation Gateway */}
-          <PropTechIdentityPipeline />
+          {/* Animated Biometric Shufti KYC Scan Beam Laser Pipeline */}
+          <AnimatedKycPipeline />
 
-          {/* Code Architecture Vault */}
+          {/* Production Code Architecture Vault */}
           <CodeArchitectureVault />
 
-          {/* 3D Stacked Career Deck */}
-          <StackedExperienceDeck />
+          {/* 3D Tilt Experience Deck */}
+          <ScrollPinnedExperienceDeck />
 
-          {/* Tech Radar Constellation */}
-          <TechRadarConstellation />
+          {/* Orbital Skill Matrix */}
+          <AnimatedSkillsMatrix />
         </main>
 
         {/* Studio Footer */}
         <StudioFooter />
 
-        {/* Floating Glass Control HUD Bar */}
-        <FloatingGlassHUD
+        {/* Floating Kinetic HUD Dock */}
+        <KineticHUDDock
           onOpenCommandPalette={() => setIsCommandPaletteOpen(true)}
           onOpenResume={() => setIsResumeOpen(true)}
         />
