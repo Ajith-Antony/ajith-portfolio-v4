@@ -1,62 +1,39 @@
 /* ==========================================
-   LAYER 1: PRIMITIVE TOKENS (Swiss Architectural Palette)
+   LAYER 1: PRIMITIVE DESIGN TOKENS (Swiss Architectural Palette)
    ========================================== */
 :root {
-  /* Architectural Monochrome Ink & Cream */
-  --color-ink-950: #0b0d12;
-  --color-ink-900: #12151e;
-  --color-ink-800: #1a1e2b;
-  --color-ink-700: #2a3042;
-  --color-ink-600: #3d465e;
+  /* Color Palette - Solar Vermilion & Deep Obsidian */
+  --color-vermilion-500: #ff4500;
+  --color-vermilion-600: #e03d00;
+  --color-indigo-500: #6366f1;
+  --color-indigo-600: #4f46e5;
+  --color-emerald-400: #34d399;
+  --color-emerald-500: #10b981;
+  --color-cyan-400: #38bdf8;
   
-  --color-cream-50: #f8f6f0;
-  --color-cream-100: #f0ece1;
-  --color-cream-200: #e2dbc9;
-  --color-cream-300: #c9bea7;
-  
-  /* Bold Avant-Garde Accents */
-  --color-vermilion-500: #ff3b00; /* Solar Ochre Vermilion */
-  --color-vermilion-600: #e03400;
-  --color-cobalt-600: #1d4ed8;    /* Deep Electric Cobalt */
-  --color-cobalt-400: #60a5fa;
-  --color-amber-500: #d97706;     /* Champagne Amber */
-  --color-emerald-500: #10b981;   /* Tactical Signal Green */
+  /* Neutral Canvas Scales */
+  --color-parchment-50: #fcfbfa;                        /* Warm Light Paper */
+  --color-parchment-100: #f3f0e8;
+  --color-obsidian-950: #090a0f;                        /* Pitch Dark Ink */
+  --color-obsidian-900: #12141d;
+  --color-obsidian-800: #1c1f2e;
 
-  /* Spacing Scale (Swiss Grid 8px) */
-  --space-1: 0.25rem;  /* 4px */
-  --space-2: 0.5rem;   /* 8px */
-  --space-3: 0.75rem;  /* 12px */
-  --space-4: 1rem;     /* 16px */
-  --space-6: 1.5rem;   /* 24px */
-  --space-8: 2rem;     /* 32px */
-  --space-12: 3rem;    /* 48px */
-  --space-16: 4rem;    /* 64px */
-  --space-24: 6rem;    /* 96px */
-
-  /* Typography Scale (Editorial Serif / Sans / Mono) */
-  --font-sans-family: 'Outfit', system-ui, sans-serif;
-  --font-serif-family: 'Playfair Display', Georgia, serif;
+  /* Typography Stacks */
+  --font-display-family: 'Outfit', 'Cabinet Grotesk', -apple-system, sans-serif;
+  --font-sans-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono-family: 'JetBrains Mono', monospace;
 
-  --font-size-xs: 0.75rem;     /* 12px */
-  --font-size-sm: 0.875rem;    /* 14px */
-  --font-size-base: 1rem;      /* 16px */
-  --font-size-lg: 1.125rem;    /* 18px */
-  --font-size-xl: 1.35rem;     /* 21.6px */
-  --font-size-2xl: 1.75rem;    /* 28px */
-  --font-size-3xl: 2.25rem;    /* 36px */
-  --font-size-4xl: 3rem;       /* 48px */
-  --font-size-5xl: 4rem;       /* 64px */
-  --font-size-6xl: 5.5rem;     /* 88px */
-
-  /* Border Radius & Sharp Architectural Lines */
-  --radius-none: 0px;
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 1rem;
+  /* Base Radius & Spacing */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
   --radius-full: 9999px;
 
-  /* Shadows & Hard Offsets */
-  --shadow-hard: 4px 4px 0px rgba(0, 0, 0, 0.9);
-  --shadow-soft: 0 12px 35px rgba(0, 0, 0, 0.15);
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
 }

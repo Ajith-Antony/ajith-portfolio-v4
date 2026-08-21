@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300..800;1,300..800&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300..800;1,300..800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
 @import "./tokens/index.css";
 @import "tailwindcss";
 
@@ -12,45 +12,36 @@
   }
 }
 
-/* Swiss Architectural Editorial Utilities */
 .font-sans {
   font-family: var(--font-sans-family);
 }
 
-.font-serif {
-  font-family: var(--font-serif-family);
+.font-display {
+  font-family: var(--font-display-family);
 }
 
 .font-mono {
   font-family: var(--font-mono-family);
 }
 
-/* High-Contrast Panel Base */
-.editorial-panel {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: var(--card-radius);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-}
-
-.editorial-panel-bold {
-  background: var(--card-bg);
+/* High-Contrast Card Panel */
+.ds-card {
+  background: var(--semantic-surface-card);
   color: var(--semantic-fg);
   border: 2px solid var(--semantic-border-bold);
   border-radius: var(--radius-lg);
-  box-shadow: 6px 6px 0px var(--semantic-primary);
-  transition: all 0.2s ease;
+  box-shadow: 5px 5px 0px var(--semantic-primary);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.editorial-panel-bold:hover {
+.ds-card:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 8px 8px 0px var(--semantic-primary);
+  box-shadow: 7px 7px 0px var(--semantic-primary);
 }
 
 /* Standalone Dark Workbench Box (Always Dark BG + Always White Text) */
 .ds-dark-workbench {
-  background-color: #0b0d12 !important;
+  background-color: #090a0f !important;
   color: #ffffff !important;
   border: 2px solid #2d3748;
 }
@@ -59,59 +50,41 @@
   color: inherit;
 }
 
-.ds-dark-workbench .text-muted {
-  color: #94a3b8 !important;
-}
-
-.ds-dark-workbench .text-emerald {
-  color: #34d399 !important;
-}
-
-.ds-dark-workbench .text-cyan {
-  color: #38bdf8 !important;
-}
-
-.ds-dark-workbench .text-purple {
-  color: #c084fc !important;
-}
-
-.ds-dark-workbench .text-rose {
-  color: #fb7185 !important;
-}
-
-/* Theme-Adapted Surface Box */
-.ds-surface-box {
-  background-color: var(--semantic-surface-tag);
-  color: var(--semantic-fg-tag);
-  border: 1px solid var(--semantic-border-bold);
-}
-
-/* Buttons */
+/* Tactile Primary Button */
 .ds-btn-primary {
-  background-color: var(--btn-primary-bg);
+  background-color: var(--semantic-primary);
   color: #ffffff !important;
   font-family: var(--font-mono-family);
   font-weight: 700;
-  padding: var(--space-3) var(--space-6);
+  padding: 10px 20px;
   border-radius: var(--radius-md);
-  border: 1px solid transparent;
-  transition: all 0.2s ease;
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  transition: all 0.18s ease-out;
+  cursor: pointer;
 }
 
 .ds-btn-primary:hover {
-  opacity: 0.9;
   transform: translateY(-1px);
+  box-shadow: 4px 4px 0px #000000;
 }
 
+.ds-btn-primary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #000000;
+}
+
+/* Secondary Button */
 .ds-btn-secondary {
-  background-color: var(--btn-secondary-bg);
-  color: var(--btn-secondary-fg);
-  border: 1px solid var(--semantic-border-bold);
+  background-color: var(--semantic-surface);
+  color: var(--semantic-fg);
+  border: 2px solid var(--semantic-border-bold);
   font-family: var(--font-mono-family);
   font-weight: 700;
-  padding: var(--space-3) var(--space-6);
+  padding: 10px 20px;
   border-radius: var(--radius-md);
-  transition: all 0.2s ease;
+  transition: all 0.18s ease-out;
+  cursor: pointer;
 }
 
 .ds-btn-secondary:hover {
@@ -119,17 +92,10 @@
   border-color: var(--semantic-primary);
 }
 
-.ds-code-window {
-  background-color: #0b0d12 !important;
-  color: #ffffff !important;
-  border: 2px solid var(--semantic-border-bold);
-  border-radius: var(--radius-md);
-  font-family: var(--font-mono-family);
-}
-
+/* Tech Tag Pill */
 .ds-tag {
-  background-color: var(--tag-bg);
-  color: var(--tag-fg);
+  background-color: var(--semantic-surface-tag);
+  color: var(--semantic-fg-tag);
   border: 1px solid var(--semantic-border-bold);
   font-family: var(--font-mono-family);
   font-weight: 700;

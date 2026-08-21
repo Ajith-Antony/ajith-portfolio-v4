@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import KineticTicker from './components/KineticTicker';
-import EditorialHeader from './components/EditorialHeader';
-import MagazineDossierView from './components/MagazineDossierView';
-import InteractiveWorkbenchView from './components/InteractiveWorkbenchView';
+import CommandHeader from './components/CommandHeader';
+import HeroExecutiveStage from './components/HeroExecutiveStage';
+import InteractiveWebSocketLab from './components/InteractiveWebSocketLab';
+import PropTechIdentityPipeline from './components/PropTechIdentityPipeline';
+import CodeArchitectureVault from './components/CodeArchitectureVault';
+import BentoCareerSpread from './components/BentoCareerSpread';
 import CommandPaletteModal from './components/CommandPaletteModal';
 import InteractiveResumeModal from './components/InteractiveResumeModal';
-import CyberFooter from './components/CyberFooter';
+import StudioFooter from './components/StudioFooter';
 
 export default function App() {
-  const [activeView, setActiveView] = useState<'dossier' | 'workbench'>('dossier');
   const [isResumeOpen, setIsResumeOpen] = useState(false);
   const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
 
@@ -17,31 +19,40 @@ export default function App() {
     <ThemeProvider>
       <div className="min-h-screen bg-[var(--semantic-bg)] text-[var(--semantic-fg)] font-sans selection:bg-[var(--semantic-primary)] selection:text-white relative overflow-x-hidden transition-colors duration-300">
         
-        {/* Kinetic Marquee Ticker */}
+        {/* Top Kinetic Marquee Ticker */}
         <KineticTicker />
 
-        {/* Top Control Header */}
-        <EditorialHeader
-          activeView={activeView}
-          onViewChange={setActiveView}
+        {/* Command Navigation Header */}
+        <CommandHeader
           onOpenResume={() => setIsResumeOpen(true)}
           onOpenCommandPalette={() => setIsCommandPaletteOpen(true)}
         />
 
-        {/* Dynamic Multi-Mode Content Stage */}
-        <main className="relative z-10 pt-8">
-          {activeView === 'dossier' ? (
-            <MagazineDossierView
-              onOpenResume={() => setIsResumeOpen(true)}
-              onSwitchToWorkbench={() => setActiveView('workbench')}
-            />
-          ) : (
-            <InteractiveWorkbenchView />
-          )}
+        {/* Main Content Stage */}
+        <main className="relative z-10 space-y-12">
+          {/* Hero Section */}
+          <HeroExecutiveStage
+            onExploreClick={() => {
+              document.getElementById('lab')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            onOpenResume={() => setIsResumeOpen(true)}
+          />
+
+          {/* Interactive Lab: Low-Latency WebSocket Stream Engine */}
+          <InteractiveWebSocketLab />
+
+          {/* PropTech Identity & Valuation Gateway */}
+          <PropTechIdentityPipeline />
+
+          {/* Production Code Architecture Vault */}
+          <CodeArchitectureVault />
+
+          {/* Career Milestones Bento Matrix */}
+          <BentoCareerSpread />
         </main>
 
-        {/* Swiss Architectural Footer */}
-        <CyberFooter />
+        {/* Studio Footer */}
+        <StudioFooter />
 
         {/* Command Palette Modal (Cmd+K) */}
         <CommandPaletteModal
@@ -50,7 +61,7 @@ export default function App() {
           onOpenResume={() => setIsResumeOpen(true)}
         />
 
-        {/* Resume PDF Viewer Modal */}
+        {/* CV / Resume PDF Modal */}
         <InteractiveResumeModal
           isOpen={isResumeOpen}
           onClose={() => setIsResumeOpen(false)}
