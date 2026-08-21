@@ -6,25 +6,48 @@
   body {
     background-color: var(--semantic-bg);
     color: var(--semantic-fg);
-    font-family: 'Archivo', -apple-system, sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Archivo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    transition: background-color 0.3s cubic-bezier(0.33, 1, 0.68, 1), color 0.3s cubic-bezier(0.33, 1, 0.68, 1);
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
 .font-sans {
-  font-family: 'Archivo', -apple-system, sans-serif;
+  font-family: 'Archivo', system-ui, -apple-system, sans-serif;
 }
 
+/* Apple WWDC Display Typography - Optical Sizing, Negative Tracking & Tight Leading */
 .font-display {
-  font-family: 'Archivo', -apple-system, sans-serif;
-  letter-spacing: -0.03em;
+  font-family: 'Archivo', system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.025em;
+  font-optical-sizing: auto;
 }
 
 .font-mono {
   font-family: 'Archivo Narrow', 'JetBrains Mono', monospace;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+/* Apple Translucent Material & Depth (backdrop-filter + light-catching top border) */
+.apple-glass {
+  background: rgba(255, 252, 249, 0.72);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(17, 18, 23, 0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+}
+
+.dark .apple-glass {
+  background: rgba(25, 25, 29, 0.76);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(245, 239, 230, 0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* Sharplink Pinned Corner Indicator */
@@ -58,10 +81,10 @@
 .case-folder {
   background-color: var(--semantic-folder-bg);
   border: 2px solid var(--semantic-border-bold);
-  border-radius: 6px;
+  border-radius: 8px;
   box-shadow: 6px 6px 0px var(--semantic-border-bold);
   position: relative;
-  transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: transform 300ms cubic-bezier(0.33, 1, 0.68, 1), box-shadow 300ms cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .case-folder:hover {
@@ -73,7 +96,7 @@
 .case-sheet {
   background-color: var(--semantic-folder-sheet);
   border: 1px solid var(--semantic-border);
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 2rem;
   position: relative;
 }
@@ -101,19 +124,20 @@
   color: inherit;
 }
 
-/* Buttons */
+/* Apple Response Principle: Instant Pointer-Down Scale Feedback */
 .ds-btn-primary {
   background-color: var(--semantic-primary);
   color: #ffffff !important;
   font-family: 'Archivo Narrow', monospace;
   font-weight: 700;
   padding: 12px 24px;
-  border-radius: 4px;
+  border-radius: 6px;
   border: 2px solid #000000;
   box-shadow: 4px 4px 0px #000000;
-  transition: all 0.18s ease-out;
+  transition: transform 100ms ease-out, box-shadow 100ms ease-out;
   cursor: pointer;
   text-transform: uppercase;
+  touch-action: manipulation;
 }
 
 .ds-btn-primary:hover {
@@ -122,7 +146,7 @@
 }
 
 .ds-btn-primary:active {
-  transform: translate(2px, 2px);
+  transform: scale(0.97) translate(1px, 1px);
   box-shadow: 1px 1px 0px #000000;
 }
 
@@ -133,15 +157,20 @@
   font-family: 'Archivo Narrow', monospace;
   font-weight: 700;
   padding: 12px 24px;
-  border-radius: 4px;
-  transition: all 0.18s ease-out;
+  border-radius: 6px;
+  transition: transform 100ms ease-out, background-color 150ms ease-out;
   cursor: pointer;
   text-transform: uppercase;
+  touch-action: manipulation;
 }
 
 .ds-btn-secondary:hover {
   background-color: var(--semantic-primary-bg);
   border-color: var(--semantic-primary);
+}
+
+.ds-btn-secondary:active {
+  transform: scale(0.97);
 }
 
 .ds-tag {
@@ -168,4 +197,25 @@
   display: flex;
   width: 200%;
   animation: marquee 25s linear infinite;
+}
+
+/* Apple Accessibility & Reduced Motion / Transparency Directives */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-marquee {
+    animation: none !important;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .apple-glass {
+    background: var(--semantic-surface) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
 }
