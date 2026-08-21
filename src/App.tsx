@@ -4,10 +4,7 @@ import KineticTicker from './components/KineticTicker';
 import CyberQuantumCanvas from './components/CyberQuantumCanvas';
 import CommandHeader from './components/CommandHeader';
 import SharplinkHeroStage from './components/SharplinkHeroStage';
-import InteractiveWebSocketEngine from './components/InteractiveWebSocketEngine';
 import InteractiveTerminalHUD from './components/InteractiveTerminalHUD';
-import AnimatedKycPipeline from './components/AnimatedKycPipeline';
-import CodeArchitectureVault from './components/CodeArchitectureVault';
 import MosbyCaseFolderDeck from './components/MosbyCaseFolderDeck';
 import AnimatedSkillsMatrix from './components/AnimatedSkillsMatrix';
 import KineticHUDDock from './components/KineticHUDDock';
@@ -48,17 +45,8 @@ export default function App() {
           {/* Mosby Files Inspired 3D Manila Case Folders */}
           <MosbyCaseFolderDeck />
 
-          {/* Real-Time WebSocket Engine */}
-          <InteractiveWebSocketEngine />
-
-          {/* Interactive Shell Terminal */}
+          {/* Interactive Shell Terminal (Headerless) */}
           <InteractiveTerminalHUD />
-
-          {/* Animated Biometric Shufti KYC Pipeline */}
-          <AnimatedKycPipeline />
-
-          {/* Production Code Architecture Vault */}
-          <CodeArchitectureVault />
 
           {/* Orbital Skill Matrix */}
           <AnimatedSkillsMatrix />
