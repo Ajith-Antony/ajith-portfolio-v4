@@ -1,0 +1,146 @@
+/* ==========================================
+   LAYER 2: SEMANTIC TOKENS (Swiss, Editorial & Cyber Purpose Aliases)
+   ========================================== */
+
+/* DEFAULT / SWISS HIGH-TECH ARCHITECTURAL (Solar Vermilion & Deep Cobalt) */
+:root, .dark, .aesthetic-swiss.dark {
+  --semantic-bg: #0b0d12;
+  --semantic-bg-alt: #141722;
+  --semantic-surface: #141722;
+  --semantic-surface-card: #181c2b;
+  
+  --semantic-surface-terminal: #07080b;
+  --semantic-fg-terminal: #ffffff;
+  --semantic-surface-tag: #1e2436;
+  --semantic-fg-tag: #f8fafc;
+
+  --semantic-fg: #f8fafc;
+  --semantic-fg-muted: #94a3b8;
+  --semantic-fg-subtle: #64748b;
+
+  --semantic-primary: #ff3b00;       /* Solar Ochre Vermilion */
+  --semantic-primary-bg: rgba(255, 59, 0, 0.15);
+  --semantic-secondary: #38bdf8;     /* High-Tech Cyan */
+  --semantic-secondary-bg: rgba(56, 189, 248, 0.15);
+  --semantic-accent: #f59e0b;        /* Amber */
+  --semantic-accent-bg: rgba(245, 158, 11, 0.15);
+
+  --semantic-border: rgba(255, 255, 255, 0.12);
+  --semantic-border-bold: rgba(255, 255, 255, 0.3);
+  --semantic-border-active: #ff3b00;
+  --semantic-ring: #ff3b00;
+}
+
+.light, .aesthetic-swiss.light {
+  --semantic-bg: #f8f6f0;                 /* Swiss Warm Cream Paper */
+  --semantic-bg-alt: #f0ece1;
+  --semantic-surface: #ffffff;
+  --semantic-surface-card: #ffffff;
+  
+  --semantic-surface-terminal: #0b0d12;
+  --semantic-fg-terminal: #ffffff;
+  --semantic-surface-tag: #e8e4d6;
+  --semantic-fg-tag: #0b0d12;
+
+  --semantic-fg: #0b0d12;
+  --semantic-fg-muted: #2d3748;
+  --semantic-fg-subtle: #4a5568;
+
+  --semantic-primary: #e03400;       /* Vermilion */
+  --semantic-primary-bg: rgba(224, 52, 0, 0.1);
+  --semantic-secondary: #0284c7;     /* Deep Cobalt */
+  --semantic-secondary-bg: rgba(2, 132, 199, 0.1);
+  --semantic-accent: #d97706;        /* Amber */
+  --semantic-accent-bg: rgba(217, 119, 6, 0.1);
+
+  --semantic-border: rgba(11, 13, 18, 0.15);
+  --semantic-border-bold: #0b0d12;
+  --semantic-border-active: #e03400;
+  --semantic-ring: #e03400;
+}
+
+/* THEME 2: EDITORIAL MONOCHROMATIC LUXURY */
+.aesthetic-editorial.light {
+  --semantic-bg: #faf7f2;                 /* Broadsheet Ivory */
+  --semantic-bg-alt: #f3efe6;
+  --semantic-surface: #ffffff;
+  --semantic-surface-card: #ffffff;
+  
+  --semantic-surface-terminal: #111111;
+  --semantic-fg-terminal: #ffffff;
+  --semantic-surface-tag: #eae4d8;
+  --semantic-fg-tag: #111111;
+
+  --semantic-fg: #111111;
+  --semantic-fg-muted: #333333;
+  --semantic-fg-subtle: #555555;
+
+  --semantic-primary: #111111;       /* Obsidian Pure Ink */
+  --semantic-primary-bg: rgba(17, 17, 17, 0.08);
+  --semantic-secondary: #b45309;     /* Deep Champagne Amber */
+  --semantic-secondary-bg: rgba(180, 83, 9, 0.1);
+  --semantic-accent: #78350f;
+  --semantic-accent-bg: rgba(120, 53, 15, 0.1);
+
+  --semantic-border: rgba(17, 17, 17, 0.18);
+  --semantic-border-bold: #111111;
+  --semantic-border-active: #111111;
+  --semantic-ring: #111111;
+}
+
+.aesthetic-editorial.dark {
+  --semantic-bg: #0e0e10;
+  --semantic-bg-alt: #161619;
+  --semantic-surface: #18181c;
+  --semantic-surface-card: #1c1c22;
+  
+  --semantic-surface-terminal: #070709;
+  --semantic-fg-terminal: #ffffff;
+  --semantic-surface-tag: #25252c;
+  --semantic-fg-tag: #f3efe6;
+
+  --semantic-fg: #f3efe6;
+  --semantic-fg-muted: #a3a099;
+  --semantic-fg-subtle: #737069;
+
+  --semantic-primary: #f3efe6;
+  --semantic-primary-bg: rgba(243, 239, 230, 0.12);
+  --semantic-secondary: #f59e0b;
+  --semantic-secondary-bg: rgba(245, 158, 11, 0.12);
+  --semantic-accent: #d97706;
+  --semantic-accent-bg: rgba(217, 119, 6, 0.12);
+
+  --semantic-border: rgba(243, 239, 230, 0.15);
+  --semantic-border-bold: #f3efe6;
+  --semantic-border-active: #f3efe6;
+  --semantic-ring: #f3efe6;
+}
+
+/* THEME 3: CYBER DARK ENGINEERING LAB (Emerald Neon) */
+.aesthetic-cyber.dark, .aesthetic-cyber.light {
+  --semantic-bg: #030712;                 /* OLED Deep Void */
+  --semantic-bg-alt: #0b1329;
+  --semantic-surface: #0b1329;
+  --semantic-surface-card: #111c38;
+  
+  --semantic-surface-terminal: #02040a;
+  --semantic-fg-terminal: #34d399;        /* Matrix Emerald Text */
+  --semantic-surface-tag: #064e3b;
+  --semantic-fg-tag: #a7f3d0;
+
+  --semantic-fg: #f3f4f6;
+  --semantic-fg-muted: #9ca3af;
+  --semantic-fg-subtle: #6b7280;
+
+  --semantic-primary: #10b981;       /* Cyber Emerald Neon */
+  --semantic-primary-bg: rgba(16, 185, 129, 0.15);
+  --semantic-secondary: #06b6d4;     /* Matrix Cyan */
+  --semantic-secondary-bg: rgba(6, 182, 212, 0.15);
+  --semantic-accent: #8b5cf6;        /* Neon Purple */
+  --semantic-accent-bg: rgba(139, 92, 246, 0.15);
+
+  --semantic-border: rgba(16, 185, 129, 0.25);
+  --semantic-border-bold: #10b981;
+  --semantic-border-active: #10b981;
+  --semantic-ring: #10b981;
+}

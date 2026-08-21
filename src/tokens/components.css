@@ -1,0 +1,34 @@
+/* ==========================================
+   LAYER 3: COMPONENT TOKENS (Swiss Architectural Editorial Components)
+   ========================================== */
+:root {
+  /* Editorial Magazine Header */
+  --magazine-header-bg: var(--semantic-bg);
+  --magazine-header-border: var(--semantic-border-bold);
+
+  /* Card Component Tokens */
+  --card-bg: var(--semantic-surface-card);
+  --card-border: var(--semantic-border);
+  --card-border-bold: var(--semantic-border-bold);
+  --card-padding: var(--space-8);
+  --card-radius: var(--radius-lg);
+
+  /* Button Tokens */
+  --btn-primary-bg: var(--semantic-primary);
+  --btn-primary-fg: #ffffff;
+  --btn-secondary-bg: var(--semantic-surface);
+  --btn-secondary-fg: var(--semantic-fg);
+
+  /* Code Window & Terminal Tokens */
+  --terminal-bg: var(--semantic-surface-terminal);
+  --terminal-fg: var(--semantic-fg-terminal);          /* Always #ffffff */
+  --terminal-border: var(--semantic-border-bold);
+
+  /* Tech Tag Pill Tokens */
+  --tag-bg: var(--semantic-surface-tag);
+  --tag-fg: var(--semantic-fg-tag);
+
+  /* Editorial Drop Cap & Quotes */
+  --drop-cap-size: 4rem;
+  --pull-quote-size: 1.5rem;
+}
