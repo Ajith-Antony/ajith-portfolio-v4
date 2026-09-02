@@ -1,0 +1,35 @@
+# Ajith Pallissery Antony — Senior Frontend Architect & Engineer
+
+> Portfolio & Technical Dossier: https://Ajith-Antony.github.io/ajith-portfolio-v4/
+> Location: Dubai, United Arab Emirates (GST UTC+4)
+> Experience: 6+ Years in Production Frontend Engineering
+> Specializations: React 19, Next.js, TypeScript, Low-Latency WebSockets, High-Frequency Trading UIs, PropTech Ecosystems, Shufti KYC Compliance, Performance Tuning (99/100 Core Web Vitals).
+
+## Professional Summary
+Senior Frontend Developer with over 6 years of experience architecting and shipping mission-critical web applications across Dubai, UAE and international engineering teams. Proven track record in high-frequency trading platforms (sub-12ms WebSocket streams), PropTech compliance pipelines (Shufti biometric OCR and digital Power of Attorney payment gateways), and Web3 decentralized platforms serving 150K+ active users.
+
+## Verified Career Highlights
+- **Boli.ae (Dubai, UAE)**: Senior Frontend Engineer (PropTech & Real Estate Ecosystem).
+  - Integrated Shufti KYC automated biometric verification and digital Power of Attorney (POA) payment calculation flows.
+  - Overhauled Core Web Vitals performance score from 42/100 to 99/100, dropping Largest Contentful Paint (LCP) from 3.8s to 0.4s.
+- **Coinroutes**: Senior Frontend Engineer (High-Frequency Crypto Trading Platform).
+  - Engineered real-time orderbook depth streaming using WebSockets with requestAnimationFrame batching, achieving sub-12ms UI latency.
+  - Modernized legacy Redux Saga codebase into modular Redux Toolkit slices, reducing boilerplate by 65%.
+- **TNC IT Solutions (Dubai, UAE)**: Senior Frontend Engineer (Web3 DEX & NFT Marketplace).
+  - Built scalable trading interfaces handling over 150,000 active concurrent users using Socket.IO and Web3 wallet connectors.
+- **CoolShop SRL**: Frontend Engineer (E-Commerce Platforms).
+- **Factweavers Technologies**: Frontend & Web Extraction Engineer.
+
+## Technical Skills
+- **Core Languages & Frameworks**: React 19, Next.js (App Router, SSR/SSG), TypeScript (Strict), JavaScript (ESNext).
+- **State Management & Data**: Redux Toolkit, Redux Saga, Zustand, React Query, WebSocket API, Socket.IO.
+- **Styling & Design Systems**: Tailwind CSS, CSS Modules, Three-Layer Token Architecture (Primitives, Semantics, Components), Apple WWDC Human Interface Guidelines.
+- **Performance & Testing**: Core Web Vitals Optimization, Lighthouse 99+, Vitest, Jest, Cypress, Bundle Analyzer.
+- **Backend & Integrations**: Node.js, Express, REST APIs, GraphQL, Shufti KYC API, Payment Gateways (Stripe, POA).
+
+## Contact & Profiles
+- Email: ajith.p.antony7@gmail.com
+- Phone: +971 52 430 7359
+- LinkedIn: https://www.linkedin.com/in/ajithpallisseryantony/
+- GitHub: https://github.com/Ajith-Antony
+- Live Portfolio: https://Ajith-Antony.github.io/ajith-portfolio-v4/
