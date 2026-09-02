@@ -3,6 +3,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import KineticTicker from './components/KineticTicker';
 import CyberQuantumCanvas from './components/CyberQuantumCanvas';
 import CommandHeader from './components/CommandHeader';
+import BreadcrumbBar from './components/BreadcrumbBar';
 import SharplinkHeroStage from './components/SharplinkHeroStage';
 import InteractiveTerminalHUD from './components/InteractiveTerminalHUD';
 import MosbyCaseFolderDeck from './components/MosbyCaseFolderDeck';
@@ -32,9 +33,12 @@ export default function App() {
           onOpenCommandPalette={() => setIsCommandPaletteOpen(true)}
         />
 
+        {/* Breadcrumb Navigation Bar with Structured Schema */}
+        <BreadcrumbBar />
+
         {/* Main Content Stage */}
         <main className="relative z-10 space-y-16">
-          {/* Sharplink-Inspired Architectural Hero Stage */}
+          {/* Sharplink-Inspired Architectural Hero Stage (Single H1) */}
           <SharplinkHeroStage
             onExploreClick={() => {
               document.getElementById('cases')?.scrollIntoView({ behavior: 'smooth' });
@@ -42,13 +46,13 @@ export default function App() {
             onOpenResume={() => setIsResumeOpen(true)}
           />
 
-          {/* Mosby Files Inspired 3D Manila Case Folders */}
+          {/* Mosby Files Inspired 3D Manila Case Folders (H2) */}
           <MosbyCaseFolderDeck />
 
-          {/* Interactive Shell Terminal (Headerless) */}
+          {/* Interactive Shell Terminal (Headerless Console) */}
           <InteractiveTerminalHUD />
 
-          {/* Orbital Skill Matrix */}
+          {/* Orbital Skill Matrix (H2) */}
           <AnimatedSkillsMatrix />
         </main>
 

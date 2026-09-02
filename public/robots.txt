@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Ajith-Antony.github.io/ajith-portfolio-v4/sitemap.xml

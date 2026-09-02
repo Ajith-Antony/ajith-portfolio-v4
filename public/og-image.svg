@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090a0f"/>
+      <stop offset="50%" stop-color="#12141d"/>
+      <stop offset="100%" stop-color="#191c2b"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4500"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="rgba(255, 255, 255, 0.05)" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1100" y1="0" x2="1100" y2="630"/>
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+  </g>
+
+  <!-- Branded Badge Top Left -->
+  <rect x="80" y="70" width="48" height="48" rx="10" fill="#ff4500" stroke="#000000" stroke-width="2"/>
+  <text x="104" y="103" font-family="'JetBrains Mono', 'Archivo Narrow', monospace" font-weight="900" font-size="20" fill="#ffffff" text-anchor="middle">APA</text>
+  
+  <rect x="144" y="76" width="380" height="36" rx="18" fill="rgba(255, 69, 0, 0.15)" stroke="#ff4500" stroke-width="1.5"/>
+  <circle cx="164" cy="94" r="5" fill="#ff4500"/>
+  <text x="180" y="99" font-family="'JetBrains Mono', 'Archivo Narrow', monospace" font-weight="700" font-size="14" fill="#ff4500" letter-spacing="1">SENIOR FRONTEND ARCHITECT • DUBAI</text>
+
+  <!-- Main Headline -->
+  <text x="80" y="230" font-family="'Archivo', -apple-system, sans-serif" font-weight="900" font-size="76" fill="#ffffff" letter-spacing="-2">AJITH PALLISSERY</text>
+  <text x="80" y="310" font-family="'Archivo', -apple-system, sans-serif" font-weight="900" font-size="76" fill="url(#accentGrad)" letter-spacing="-2">ANTONY</text>
+
+  <!-- Subheading -->
+  <text x="80" y="375" font-family="'Archivo', -apple-system, sans-serif" font-weight="500" font-size="24" fill="#94a3b8">
+    6+ Years Experience • React 19 • Next.js • TypeScript • Sub-12ms WebSockets
+  </text>
+  <text x="80" y="410" font-family="'Archivo', -apple-system, sans-serif" font-weight="500" font-size="20" fill="#64748b">
+    PropTech Compliance (Boli.ae) • High-Frequency Crypto Trading (Coinroutes) • Web3 (TNC)
+  </text>
+
+  <!-- Metrics Chips -->
+  <g transform="translate(80, 470)">
+    <rect x="0" y="0" width="220" height="80" rx="8" fill="#181b28" stroke="#33343d" stroke-width="1.5"/>
+    <text x="20" y="32" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="12" fill="#64748b">CORE WEB VITALS</text>
+    <text x="20" y="64" font-family="'Archivo', sans-serif" font-weight="900" font-size="28" fill="#34d399">99 / 100</text>
+
+    <rect x="240" y="0" width="220" height="80" rx="8" fill="#181b28" stroke="#33343d" stroke-width="1.5"/>
+    <text x="260" y="32" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="12" fill="#64748b">STREAM LATENCY</text>
+    <text x="260" y="64" font-family="'Archivo', sans-serif" font-weight="900" font-size="28" fill="#38bdf8">&lt; 12 ms</text>
+
+    <rect x="480" y="0" width="220" height="80" rx="8" fill="#181b28" stroke="#33343d" stroke-width="1.5"/>
+    <text x="500" y="32" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="12" fill="#64748b">WEB3 SCALE</text>
+    <text x="500" y="64" font-family="'Archivo', sans-serif" font-weight="900" font-size="28" fill="#ff4500">150K+ Users</text>
+
+    <rect x="720" y="0" width="320" height="80" rx="8" fill="#181b28" stroke="#33343d" stroke-width="1.5"/>
+    <text x="740" y="32" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="12" fill="#64748b">VERIFIED LOCATION</text>
+    <text x="740" y="64" font-family="'Archivo', sans-serif" font-weight="900" font-size="24" fill="#ffffff">Dubai, UAE (UTC+4)</text>
+  </g>
+</svg>
